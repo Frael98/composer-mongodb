@@ -1,0 +1,21 @@
+{
+    "name": "frael/testcomposer",
+    "description": "prueba mongodb composer",
+    "type": "project",
+    "require": {
+        "mongodb/mongodb": "v1.12.x-dev",
+        "twbs/bootstrap": "dev-main"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Frael\\Testcomposer\\": "src/app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Frael"
+        }
+    ],
+    "minimum-stability": "dev"
+}
