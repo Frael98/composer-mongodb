@@ -1,5 +1,5 @@
 <?php
-header("Access-Control-Allow-Origin: *"); 
+header("Access-Control-Allow-Origin: *"); // Permite las peticiones desde js
 use Frael\Testcomposer\Cliente;
 
 class ClienteController {
@@ -48,6 +48,9 @@ class ClienteController {
         /* var_dump($input['_id']); */
     }
 
+    /**
+     * Elimina un cliente
+     */
     public static function deleteCliente()
     {
         $data = json_decode(file_get_contents("php://input"), true);

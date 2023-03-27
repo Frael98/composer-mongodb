@@ -10,18 +10,26 @@ class ViajeController
         self::$model = new Viaje;
     }
 
+    /**
+     * Vista principal listado de viajes
+     */
     public function index()
     {
         $viajes = self::$model->getViajes();
         
         include_once './src/view//viaje/listado.php';
     }
-
+    /**
+     * Vista registro de viaje
+     */
     public function registroViajes()
     {
         include_once './src/view/viaje/viaje.php';
     }
 
+    /**
+     * Ruta ingresar viaje
+     */
     public function setViaje()
     {
         $lugar = $_POST['lugar'];

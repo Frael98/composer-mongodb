@@ -19,6 +19,10 @@ const setModal = async (_id) => {
     console.log(res)
 }
 
+/**
+ * Elimina Cliente
+ * @param {} _id 
+ */
 const deleteCliente = async (_id) => {
 
     res = await fetch('./index.php?c=Cliente&m=deleteCliente',

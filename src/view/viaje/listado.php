@@ -20,7 +20,7 @@ require './src/view/components/header.php';
                     <p class="card-text">
                         <?php echo $viaje->descripcion; ?>.</p>
                     <p class="card-text"><small class="text-muted">Date: <?php $fecha = new DateTime($viaje->fecha);
-                    echo $fecha->format(DATE_RSS) ?> </small></p>
+                                                                            echo $fecha->format(DATE_RSS) ?> </small></p>
                 </div>
             </div>
         <?php endforeach ?>
@@ -64,6 +64,7 @@ require './src/view/components/header.php';
     </div> -->
 </div>
 
+<script src="./src/js/viaje_events.js"></script>
 <?php
 require './src/view/components/footer.php';
 
